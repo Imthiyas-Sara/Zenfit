@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Workout | Zenfit</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">                                                                      
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    /* Custom CSS */
+    body {
+      background-color: #f5f0e9;
+    }
+
+    .card {
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      transition: 0.3s ease-in-out;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .rounded-img {
+      width: 100%;
+      max-width: 200px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Bootstrap Navbar -->
+<nav class="navbar navbar-expand-sm bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="home.html"><h1>Zenfit</h1></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>  
+        <li class="nav-item"><a class="nav-link active" href="workout.html">Workout</a></li>
+        <li class="nav-item"><a class="nav-link" href="nutrition.html">Nutrition</a></li>
+        <li class="nav-item"><a class="nav-link" href="community.html">Community</a></li> 
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li> 
+      </ul>
+    </div>
+  </div>
+</nav>
+<hr>
+
+<!-- Workout Plans Section -->
+<div class="container mt-5">
+  <h2 class="text-center mb-4">Fitness Plans</h2>
+
+  <!-- Basic Plan -->
+  <h5>Basic Plan</h5>
+  <div class="row align-items-center">
+    <div class="col-md-4 text-center">
+      <img src="Images/download3.jpg" class="img-fluid rounded" alt="Basic Plan Workout Image">
+    </div>
+    <div class="col-md-8">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Workout</th>
+            <th>Duration</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>Cardio</td>
+            <td>30 min</td>
+          </tr>
+          <tr>
+            <td>Tuesday</td>
+            <td>Strength Training</td>
+            <td>45 min</td>
+          </tr>
+        </tbody>
+      </table>
+      <a href="https://www.mapmyfitness.com/" class="btn btn-success">Track</a>
+      <a href="https://madmuscles.com/" class="btn btn-outline-primary">workout plan</a>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Intermediate Plan -->
+  <h5>Intermediate Plan</h5>
+  <div class="row align-items-center">
+    <div class="col-md-4 text-center">
+      <img src="Images/download2.jpg" class="img-fluid rounded" alt="Intermediate Plan Workout Image">
+    </div>
+    <div class="col-md-8">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Workout</th>
+            <th>Duration</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Wednesday</td>
+            <td>HIIT</td>
+            <td>40 min</td>
+          </tr>
+          <tr>
+            <td>Thursday</td>
+            <td>Yoga</td>
+            <td>60 min</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Advanced Plan -->
+  <h5>Advanced Plan</h5>
+  <div class="row align-items-center">
+    <div class="col-md-4 text-center">
+      <img src="Images/download99.jpg" class="img-fluid rounded" alt="Advanced Plan Workout Image">
+    </div>
+    <div class="col-md-8">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Workout</th>
+            <th>Duration</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Friday</td>
+            <td>Strength + Cardio</td>
+            <td>60 min</td>
+          </tr>
+          <tr>
+            <td>Saturday</td>
+            <td>Pilates</td>
+            <td>50 min</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+
+
+<hr>
+
+<!-- Frequently Asked Questions -->
+<div class="container mt-5">
+  <h2 class="text-center mb-4">Blogs</h2>
+  <div class="row g-4">
+    <div class="col-md-6">
+      <div class="card">
+        <img src="Images/download5.jpg" class="card-img-top" alt="Lose Weight">
+        <div class="card-body">
+          <h5 class="card-title">Can 6-6-6 Walking Workout Help You Lose Weight?</h5>
+          <p class="card-text">The 6-6-6 walking trend may help you lose weight and get fit.</p>
+          <a href="https://www.healthline.com/health-news/666-walking-trend-weight-loss" class="text-success">Read More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card">
+        <img src="Images/images.jpg" class="card-img-top" alt="Weight Loss">
+        <div class="card-body">
+          <h5 class="card-title">This Couple Lost 118 Pounds Together Without Medication</h5>
+          <p class="card-text">After years of feeling unwell and overweight, they made a change.</p>
+          <a href="https://www.healthline.com/health-news/married-couple-loses-119-pounds-together-without-meds" class="text-success">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-4 mt-4">
+    <div class="col-md-6">
+      <div class="card">
+        <img src="Images/download6.jpg" class="card-img-top" alt="Weekend Warrior">
+        <div class="card-body">
+          <h5 class="card-title">‘Weekend Warrior’ Workouts for Your 2025 Fitness Goals</h5>
+          <p class="card-text">Weekend warriors get their exercise in over a couple of days.</p>
+          <a href="https://www.healthline.com/health-news/weekend-warrior-workouts-beginner-tips/" class="text-success">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-light text-black text-center p-4 mt-5">
+  <p>&copy; 2025 Zenfit. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

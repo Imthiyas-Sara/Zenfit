@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Zenfit - Nutrition</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <style>
+    /* Custom CSS for image resizing and hover effects */
+    .nutrition-img {
+      width: 100%; 
+      max-width: 200px; 
+      height: auto; 
+      margin: 10px; 
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      transition: 0.3s ease-in-out;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    .btn-custom{
+      background-color: #e7a3bb;
+    }
+    .circle {
+  border-radius: 50%;
+  object-fit: cover; /* Ensures the image fills the circle without stretching */
+  width: 200px; /* Adjust as needed */
+  height: 200px; /* Adjust as needed */
+}
+  </style>
+</head>
+<body>
+
+<!-- Bootstrap Navbar -->
+<nav class="navbar navbar-expand-sm bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="home.html"><h1>Zenfit</h1></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>  
+        <li class="nav-item"><a class="nav-link" href="workout.html">Workout</a></li>
+        <li class="nav-item"><a class="nav-link active" href="nutrition.html">Nutrition</a></li>
+        <li class="nav-item"><a class="nav-link" href="community.html">Community</a></li> 
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li> 
+      </ul>
+    </div>
+  </div>
+</nav>
+<hr>
+
+<!-- Nutrition Content -->
+<div class="container mt-5">
+  <h2 class="text-center mb-4">Healthy Recipes & Meal Plans</h2>
+  <div class="row">
+
+    <!-- Image Section -->
+    <div class="col-md-6 text-center">
+      <!-- Rounded Image -->
+      <img src="https://img.freepik.com/free-vector/healthy-recipe-illustration-concept_23-2148562512.jpg?w=1380&t=st=1707160619~exp=1707161219~hmac=59194dc530391fd521cbd32bbd53bc60f96dd1f013b6999c7a813449775347c7" class="square nutrition-img" alt="square Image">
+      <!--<p class="mt-2"><strong>Rounded Image</strong></p>-->
+    </div>
+
+    <!-- Table Section -->
+    <div class="col-md-6">
+      <h3>Daily Meal Plan</h3>
+      <!--Bordered Table with Warning Background-->
+      <table class="table table-bordered table-warning text-center">
+        <thead class="table-dark">
+          <tr>
+            <th>Meal</th>
+            <th>Food Item</th>
+            <th>Calories</th>
+            <th>Protein (g)</th>
+            <th>Carbs (g)</th>
+            <th>Fats (g)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Breakfast</td><td>Oatmeal & banana</td><td>250</td><td>8</td><td>40</td><td>5</td></tr>
+          <tr><td>Lunch</td><td>Grilled Chicken & Veggies</td><td>500</td><td>35</td><td>20</td><td>15</td></tr>
+          <tr><td>Dinner</td><td>Salmon & Salad</td><td>450</td><td>30</td><td>35</td><td>20</td></tr>
+        </tbody>
+      </table>
+      
+      <!-- Button Styles -->
+      <a href="https://www.goodhousekeeping.com/health/diet-nutrition/g4351/1200-calorie-diet-plan/" class="btn btn-success">View More Recipes</a>
+      <a href="https://quiz.nutrimate.fit/kit_age_range_1?cohort=mf_intro2&utm_source=googleadwords_int&utm_medium=cpc&utm_campaign=My+Fast_Web_Search_11.09.24_WW_Broad_tCpa&ad_id=713107747643&adset_id=169694162520&campaign_id=21688930001&utm_term=free+diet+plans+that+work&gad_source=1&gclid=CjwKCAjwnPS-BhBxEiwAZjMF0s0mAiXpUuY57I_vf5poYhkPdJ8WLfacRg7N1S7AUGKp1XvXJ4l4DRoCo3sQAvD_BwE&uuid=be036db3-0695-48ca-961c-dee5197da03d&lang=en" class="btn btn-danger">Customize Plan</a>
+    </div>
+  </div>
+</div>
+<hr>
+
+<!-- Nutrition Advice -->
+<div class="container mt-5">
+  <h2 class="text-center mb-4">Diet & Nutrition Advice</h2>
+  <div class="row">
+    <!-- Circle Image -->
+    <div class="col-md-6 text-center">
+      <img src="https://static.vecteezy.com/system/resources/previews/041/170/055/original/nutrition-and-dietetics-concept-flat-illustration-vector.jpg" class="img-thumbnail nutrition-img" alt="Thumbnail Image">
+      <!--<p class="mt-2"><strong>Thumbnail Image</strong></p>-->
+    </div>
+    <!-- List Section -->
+    <div class="col-md-6">
+      <h3>Key Nutrition Tips</h3>
+      <!-- Hoverable Table with Success Background-->
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-primary">Eat a balanced diet</li>
+        <li class="list-group-item list-group-item-success">Stay hydrated</li>
+        <li class="list-group-item list-group-item-warning">Limit processed foods</li>
+      </ul>
+      <a href="about.html" class="btn btn-custom mt-3">Contact us More Tips</a>
+    </div>
+  </div>
+</div>
+<hr>
+
+<!-- Hydration Guide -->
+<div class="container mt-5">
+  <h2 class="text-center mb-4">Hydration Guide</h2>
+  <div class="row">
+    <!--circle Image -->
+    <div class="col-md-6 text-center">
+      <img src="https://img.freepik.com/premium-photo/cartoon-national-hydration-day_902820-3480.jpg" class="circle nutrition-img" alt="Circle Image">
+    <!--<p class="mt-2"><strong>circle Image</strong></p>-->
+    </div>
+    <!-- Table Section -->
+    <div class="col-md-6">
+      <!--List Group Table-->
+      <table class="table table-hover table-success text-center">
+        <thead>
+          <tr>
+            <th>Drink</th>
+            <th>Benefits</th>
+            <th>Recommended Intake</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Water</td><td>Hydration</td><td>2-3 Liters/Day</td></tr>
+          <tr><td>Green Tea</td><td>Boosts Metabolism</td><td>2-3 Cups/Day</td></tr>
+          <tr><td>Coconut Water</td><td>Electrolytes</td><td>1-2 Glasses/Day</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<hr>
+
+<!-- Footer -->
+<footer class="bg-light text-black text-center p-4 mt-5">
+    <p>&copy; 2025 Zenfit. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
